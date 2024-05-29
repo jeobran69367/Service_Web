@@ -1,6 +1,6 @@
 # Ignore les dossiers bin et obj
-.\MySqlApp\bin
-.\MySqlApp\obj
+API\MySqlApp\bin\
+API\MySqlApp\obj\
 
 # Ignore le fichier appsettings.json s'il contient des informations sensibles
-.\MySqlApp\appsettings.json
+API\MySqlApp\appsettings.json\
