@@ -1,6 +1,6 @@
 # Ignore les dossiers bin et obj
-.\bin
-.\obj/
+bin/
+obj/
 
 # Ignore le fichier appsettings.json s'il contient des informations sensibles
 .\appsettings.json
