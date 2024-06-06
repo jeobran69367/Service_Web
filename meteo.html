@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title> Meteo Test</title>
+</head>
+<body>
+    <script>
+
+    let mot = "Bonjour";
+    const apikey = "da6153fa7589cdd5ae0121501c4193b4";
+    const city = "paris";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
+
+    fetch(url)
+      .then(data => data.json())
+      .then(data => {
+        const temperature = data.main.temp;
+        console.log( ` ${mot}, La température actuelle à ${city} est de ${temperature}°C`);
+      })
+      .catch(error => { console.log("Le service rencontre une erreur, ressayez utlerieurement");
+      });
+
+    </script>
+</body>
+</html>
